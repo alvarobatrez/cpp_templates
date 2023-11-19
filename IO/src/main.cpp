@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip> // neccesary to use setprecision
 
 using namespace std;
 
@@ -15,7 +16,7 @@ int main()
 
     c = 5.0 / 9 * (f - 32);
 
-    cout << f << " F is equal to " << c << " C" << endl;
+    cout << fixed << setprecision(2) << f << " F is equal to " << c << " C" << endl;
 
     // ***** MULTIPLE INPUTS *****
 
