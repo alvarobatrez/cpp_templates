@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 // ***** FAHRENHEIT TO CELSIUS *****
 
 int main()
@@ -9,7 +11,7 @@ int main()
 
     c = 5.0 / 9 * (f - 32);
 
-    std::cout << f << " F is equal to " << c << " C" << std::endl;
-
+    cout << f << " F is equal to " << c << " C" << endl;
+    
     return 0;
 }

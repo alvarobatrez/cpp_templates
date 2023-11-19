@@ -36,4 +36,5 @@
   + Object Oriented Programming
     1. Objects.
     2. Public and private.
-    3. Constructors.
+    3. Implement methods.
+    4. Constructors.
