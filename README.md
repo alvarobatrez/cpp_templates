@@ -24,8 +24,8 @@
     2. C++ style strings;
     3. Letter pyramid;
   + Functions.
-    1. Scopes.
-    2. Functions.
+    1. Functions.
+    2. Scopes.
     3. Recursivity.
   + Pointers.
     1. Pointers.
