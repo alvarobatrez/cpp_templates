@@ -22,7 +22,7 @@
   + Strings.
     1. C style strings;
     2. C++ style strings;
-    3. Letter pyramid;
+    3. Exercise;
   + Functions.
     1. Functions.
     2. Scopes.
@@ -30,9 +30,9 @@
   + Pointers.
     1. Pointers.
     2. Pointers and functions.
-    3. Swap pointers.
-    4. Reverse arrays.
-    5. References.
+    3. References.
+    4. Exercise 1.
+    5. Exercise 2.
   + Object Oriented Programming
     1. Objects.
     2. Public and private.

@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// ***** LETTER PYRAMID *****
+
 int main()
 {
     string word {"abcd"};
