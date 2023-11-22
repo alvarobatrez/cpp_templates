@@ -16,8 +16,6 @@ int main()
     cout << "Size of p: " << sizeof(p) << " bytes" << endl;
     cout << "Address of p: " << &p << endl << endl;
 
-    // ***** SIZE *****
-
     double var {27.5};
     double *var_ptr {&var};
 

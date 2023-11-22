@@ -36,5 +36,5 @@
   + Object Oriented Programming
     1. Objects.
     2. Public and private.
-    3. Coding standard.
+    3. Standard methods.
     4. Constructors.
