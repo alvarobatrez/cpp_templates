@@ -1,6 +1,6 @@
 # C++ Templates
 
-  ## Course Content
+  ## Index
 
   + Hello World.
   + Variables.
@@ -38,3 +38,4 @@
     2. Public and private.
     3. Standard methods.
     4. Constructors.
+    5. Copy constructor.
