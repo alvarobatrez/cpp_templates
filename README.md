@@ -39,3 +39,5 @@
     3. Standard methods.
     4. Constructors.
     5. Copy constructor.
+    6. Shallow and deep copy.
+    7. Move constructor.

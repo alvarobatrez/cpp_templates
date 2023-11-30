@@ -36,16 +36,19 @@ MyClass::MyClass(int d)
 {
     data = new int;
     *data = d;
+    cout << "Constructor for " << d << endl;
 }
 
 // ***** SHALLOW COPY *****
+
 /* MyClass::MyClass(const MyClass &source)
-: data(source.data)
+: data {source.data}
 {
     cout << "Shallow copy for " << *data << " created" << endl;
 } */
 
 // ***** DEEP COPY *****
+
 MyClass::MyClass(const MyClass &source)
 : MyClass {*source.data}
 {
