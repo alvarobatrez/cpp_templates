@@ -41,3 +41,5 @@
     5. Copy constructor.
     6. Shallow and deep copy.
     7. Move constructor.
+    8. Constant class.
+    9. Static class members.
