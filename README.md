@@ -20,9 +20,9 @@
     2. While.
     3. Do while.
   + Strings.
-    1. C style strings;
-    2. C++ style strings;
-    3. Exercise;
+    1. C style strings.
+    2. C++ style strings.
+    3. Exercise.
   + Functions.
     1. Functions.
     2. Scopes.
@@ -43,3 +43,4 @@
     7. Move constructor.
     8. Constant class.
     9. Static class members.
+    10. Exercise.
