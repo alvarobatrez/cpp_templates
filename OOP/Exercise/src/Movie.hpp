@@ -15,20 +15,19 @@ class Movie
     public:
 
     Movie(std::string name = "", char classification = ' ', double rating = 0.0, unsigned int views = 0);
-    Movie(const Movie &source);
     ~Movie();
 
-    std::string get_name();
+    std::string get_name() const;
 
-    char get_classification();
+    char get_classification() const;
 
     bool set_rating(double rating);
-    double get_rating();
+    double get_rating() const;
 
     void increase_views();
-    unsigned int get_views();
+    unsigned int get_views() const;
 
-    void display_info();
+    void display_info() const;
 
 };
 
