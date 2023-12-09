@@ -1,14 +1,18 @@
 #include <iostream>
 #include "Streaming.hpp"
 
-Streaming::Streaming() {}
+Streaming::Streaming(std::vector <Movie> catalog)
+: movies_catalog {catalog} {}
+
+Streaming::Streaming(const Streaming &source)
+: Streaming {source.movies_catalog} {}
 
 Streaming::~Streaming() {}
 
 int Streaming::check_catalog(std::string name)
 {
     int i {};
-    for (const Movie &movie : catalog)
+    for (const Movie &movie : movies_catalog)
     {
         if (movie.get_name() == name)
         {
@@ -25,7 +29,7 @@ void Streaming::add_to_catalog(std::string name, char classification)
     if (check_catalog(name) == -1)
     {
         Movie new_movie {name, classification};
-        catalog.push_back(new_movie);
+        movies_catalog.push_back(new_movie);
         std::cout << name << " added to the catalog" << "\n";
     }
     else
@@ -39,7 +43,7 @@ void Streaming::play(std::string name)
     int index = check_catalog(name);
     if (index != -1)
     {
-        std::cout << "Playing " << catalog.at(index).get_name() << "...\n";
+        std::cout << "Playing " << movies_catalog.at(index).get_name() << "...\n";
 
         double rating {};
         std::cout << "Do you like the movie? Enter your movie rating from 0 to 5: ";
@@ -52,7 +56,7 @@ void Streaming::play(std::string name)
             std::cin >> rating;
         }
 
-        catalog.at(index).set_rating(rating);
+        movies_catalog.at(index).set_rating(rating);
     }
     else
     {
@@ -62,7 +66,7 @@ void Streaming::play(std::string name)
 
 void Streaming::display_catalog_info() const
 {
-    for (const Movie &movie : catalog)
+    for (const Movie &movie : movies_catalog)
     {
         movie.display_info();
     }

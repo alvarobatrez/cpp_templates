@@ -8,11 +8,12 @@ class Streaming
 {
     private:
 
-    std::vector <Movie> catalog {};
+    std::vector <Movie> movies_catalog;
 
     public:
 
-    Streaming();
+    Streaming(std::vector <Movie> catalog = {});
+    Streaming(const Streaming &source);
     ~Streaming();
 
     int check_catalog(std::string);

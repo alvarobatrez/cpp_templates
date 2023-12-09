@@ -34,6 +34,10 @@ int main()
     play_movie(netflix, "Y Donde Estan Las Rubias?");
 
     display_streaming_service_info(netflix);
+
+    Streaming primevideo {netflix};
+
+    display_streaming_service_info(primevideo);
     
     return 0;
 }
