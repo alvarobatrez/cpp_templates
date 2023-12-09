@@ -21,7 +21,6 @@ void display_streaming_service_info(Streaming &service)
 int main()
 {
     Streaming netflix;
-    Streaming disney;
 
     add_movie_to_catalog(netflix, "Mi Pobre Angelito", 'A');
     add_movie_to_catalog(netflix, "Y Donde Estan Las Rubias?", 'B');

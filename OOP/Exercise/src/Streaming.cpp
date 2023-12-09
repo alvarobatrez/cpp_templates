@@ -7,12 +7,14 @@ Streaming::~Streaming() {}
 
 int Streaming::check_catalog(std::string name)
 {
-    for (size_t i {}; i < catalog.size(); i++)
+    int i {};
+    for (const Movie &movie : catalog)
     {
-        if (catalog.at(i).get_name() == name)
+        if (movie.get_name() == name)
         {
-            return static_cast<int>(i);
+            return i;
         }
+        i++;
     }
 
     return -1;
@@ -39,9 +41,16 @@ void Streaming::play(std::string name)
     {
         std::cout << "Playing " << catalog.at(index).get_name() << "...\n";
 
-        double rating;
+        double rating {};
         std::cout << "Do you like the movie? Enter your movie rating from 0 to 5: ";
         std::cin >> rating;
+
+        while (0.0 > rating || rating > 5.0)
+        {
+            std::cout << "Invalid number\n";
+            std::cout << "Enter your movie rating from 0 to 5: ";
+            std::cin >> rating;
+        }
 
         catalog.at(index).set_rating(rating);
     }
@@ -53,7 +62,7 @@ void Streaming::play(std::string name)
 
 void Streaming::display_catalog_info() const
 {
-    for (Movie movie : catalog)
+    for (const Movie &movie : catalog)
     {
         movie.display_info();
     }
