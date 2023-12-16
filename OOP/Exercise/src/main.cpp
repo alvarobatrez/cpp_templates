@@ -35,6 +35,8 @@ int main()
 
     display_streaming_service_info(netflix);
 
+    cout << "\n******************************\n";
+
     Streaming primevideo {netflix};
 
     display_streaming_service_info(primevideo);

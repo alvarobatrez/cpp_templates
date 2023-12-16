@@ -1,6 +1,42 @@
 # C++ Templates
 
-  ## Index
+## Installation
+
+Enter to winlibs.com and download the last realease under UCRT runtime.
+
+Unzip the file in the root folder C:\
+
+Press Windows key and look for the Environment Variables Editor.
+
+Click on Environment Variables, select Variables System: Path and click on edit.
+
+Clink on New button and type: C:\mingw64\bin
+
+Save and accept all.
+
+## Configure Visual Studio Code
+
+Select: View >> Command Palette >> C/C++: Edit Configurations >> Compiler Path
+
+Choose C:/mingw64/bin/g++.exe from the list. Scroll down and select C Standard c++17
+
+Select: Terminal >> Configure Default Build Task
+
+This will open the file .vscode/task.jason
+
+Modify args:
+
+"args": [
+  "-std=c++17",
+	"-fdiagnostics-color=always",
+	"-g",
+	"-Wall",
+	"${fileDirname}\\*.cpp",
+	"-o",
+	"${fileDirname}\\${fileBasenameNoExtension}.exe"
+],
+
+## Index
 
   + Hello World.
   + Variables.
