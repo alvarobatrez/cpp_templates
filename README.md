@@ -26,7 +26,7 @@ This will open the file .vscode/task.jason
 
 Modify args:
 
-``
+```
 "args": [
   "-std=c++17",
 	"-fdiagnostics-color=always",
@@ -36,7 +36,7 @@ Modify args:
 	"-o",
 	"${fileDirname}\\${fileBasenameNoExtension}.exe"
 ],
-``
+```
 
 ## Index
 
