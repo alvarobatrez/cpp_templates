@@ -21,25 +21,41 @@ void display_streaming_service_info(Streaming &service)
 int main()
 {
     Streaming netflix;
+    string name {};
+    char classification {};
+    bool flag {true};
 
-    add_movie_to_catalog(netflix, "Mi Pobre Angelito", 'A');
-    add_movie_to_catalog(netflix, "Y Donde Estan Las Rubias?", 'B');
-    add_movie_to_catalog(netflix, "Titanic", 'B');
-    add_movie_to_catalog(netflix, "Mi Pobre Angelito", 'A');
+    while (flag == true)
+    {
+        display_streaming_service_info(netflix);
+        
+        int opt {};
+        cout << "\nSelect one option: \n1. Add a movie to your playlist.\n2. Watch a movie.\n3. Exit.\nYour selection: ";
+        cin >> opt;
 
-    play_movie(netflix, "Y Donde Estan Las Rubias?");
-    play_movie(netflix, "Mi Pobre Angelito");
-    play_movie(netflix, "Y Donde Estan Las Rubias?");
-    play_movie(netflix, "Barbie");
-    play_movie(netflix, "Y Donde Estan Las Rubias?");
-
-    display_streaming_service_info(netflix);
-
-    cout << "\n******************************\n";
-
-    Streaming primevideo {netflix};
-
-    display_streaming_service_info(primevideo);
+        switch(opt)
+        {
+            case 1 :
+                cout << "Enter the name of the movie: ";
+                cin.ignore(); getline(cin, name);
+                cout << "Enter the classification of the movie (A,B,C): ";
+                cin >> classification;
+                add_movie_to_catalog(netflix, name, classification);
+                break;
+            case 2:
+                cout << "\nEnter the name of the movie: ";
+                cin.ignore(); getline(cin, name);
+                play_movie(netflix, name);
+                break;
+            case 3:
+                cout << "Bye.\n";
+                flag = false;
+                break;
+            default:
+                cout << "Invalid option\n";
+                break;
+        }
+    }
     
     return 0;
 }
