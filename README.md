@@ -26,6 +26,7 @@ This will open the file .vscode/task.jason
 
 Modify args:
 
+``
 "args": [
   "-std=c++17",
 	"-fdiagnostics-color=always",
@@ -35,6 +36,7 @@ Modify args:
 	"-o",
 	"${fileDirname}\\${fileBasenameNoExtension}.exe"
 ],
+``
 
 ## Index
 
@@ -80,3 +82,5 @@ Modify args:
     8. Constant class.
     9. Static class members.
     10. Exercise.
+  + Overloading Operators
+    1. MyString
