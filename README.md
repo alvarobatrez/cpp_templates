@@ -83,4 +83,5 @@ Modify args:
     9. Static class members.
     10. Exercise.
   + Overloading Operators
-    1. MyString
+    1. Operator overloading.
+    2. Copy assignment.

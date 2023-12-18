@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    MyString empty;
-    MyString name {"Alvaro"};
-    MyString namecpy {name};
+    MyString empty; // no arguments constructor
+    MyString name {"Alvaro"}; // overloaded constructor
+    MyString namecpy {name}; // copy constructor
 
     empty.display();
     name.display();
