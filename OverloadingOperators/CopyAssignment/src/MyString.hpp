@@ -11,12 +11,23 @@ class MyString
 
     public:
 
+    // ***** NO ARGUMENTS CONSTRUCTOR *****
+
     MyString();
+
+    // ***** OVERLOADED CONSTRUCTOR *****
+
     MyString(const char *s);
+
+    // ***** COPY CONSTRUCTOR *****
+
     MyString(const MyString &source);
+
+    // ***** DESTRUCTOR *****
+
     ~MyString();
 
-    // ***** COPY ASSINGMENT *****
+    // ***** COPY ASSIGNMENT *****
 
     MyString &operator=(const MyString &rhs);
 

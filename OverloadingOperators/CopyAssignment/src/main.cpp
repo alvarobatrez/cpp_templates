@@ -1,5 +1,4 @@
 #include "MyString.hpp"
-#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -16,8 +15,6 @@ int main()
     a.display();
     b.display();
 
-    cout << endl;
-
     vector <MyString> beatles;
     beatles.push_back("John");
     beatles.push_back("Paul");
@@ -28,8 +25,6 @@ int main()
     {
         b.display();
     }
-
-    cout << endl;
 
     for (MyString &b : beatles)
     {
