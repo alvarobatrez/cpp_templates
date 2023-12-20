@@ -1,0 +1,36 @@
+#include "MyString.hpp"
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    MyString a {"Hello"}; // overloaded constructor
+    a = MyString{"world"}; // overloaded constructor -> move assignment
+    a = "hello world"; // overloaded constructor -> move assignment
+    
+    a.display();
+
+    vector <MyString> beatles;
+    beatles.push_back("John");
+    beatles.push_back("Paul");
+    beatles.push_back("George");
+    beatles.push_back("Ringo");
+
+    for (const MyString &b : beatles)
+    {
+        b.display();
+    }
+
+    for (MyString &b : beatles)
+    {
+        b = "Yoko";
+    }
+
+    for (const MyString &b : beatles)
+    {
+        b.display();
+    }
+    
+    return 0;
+}
