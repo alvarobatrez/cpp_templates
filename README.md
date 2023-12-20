@@ -85,3 +85,6 @@ Modify args:
   + Overloading Operators
     1. Operator overloading.
     2. Copy assignment.
+    3. Move assignment.
+    4. Operator as member function.
+    5. Operator as member gloabl function.
