@@ -83,3 +83,8 @@ Modify args:
     9. Static class members.
     10. Exercise.
   + Overloading Operators
+    1. Overload constructor.
+    2. Overload assignment operator (copy).
+    3. Overload assignment operator (move).
+    4. Overload operators as member functions.
+    5. Overload operators as global functions.
