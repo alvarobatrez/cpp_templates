@@ -1,23 +1,23 @@
 #include "MyString.hpp"
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    MyString john {"john"};
-    MyString paul {"PAUL"};
-    MyString george {"george"};
-    MyString ringo {"ringo"};
+    MyString b1 {"john"};
+    MyString b2;
+    MyString b3;
+    MyString b4;
 
-    MyString paulower {-paul};
-    paulower.display();
+    cout << "Write the name of the second beatle: ";
+    cin >> b2;
 
-    MyString c {george + ringo};
-    c.display();
+    cout << "Write the name of the third and fourth beatle separated by a space: ";
 
-    std::cout << (john == ringo) << std::endl;
+    cin >> b3 >> b4;
 
-    MyString copy {ringo};
-    std::cout << (copy == ringo) << std::endl;
+    cout << "The name of the Beatles are " << b1 << ", " << b2 << ", " << b3 << " and " << b4 << endl;
     
     return 0;
 }

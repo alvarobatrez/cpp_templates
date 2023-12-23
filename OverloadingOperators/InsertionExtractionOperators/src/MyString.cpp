@@ -106,6 +106,22 @@ bool MyString::operator==(const MyString &rhs) const
     return (std::strcmp(str, rhs.str) == 0);
 }
 
+std::ostream &operator<<(std::ostream &os, const MyString &rhs) // insertion operator
+{
+    os << rhs.str;
+    return os;
+}
+
+std::istream &operator>>(std::istream &in, MyString &rhs) // extraction operator
+{
+    char *buff = new char[1000];
+    in >> buff;
+
+    rhs = MyString {buff};
+    delete [] buff;
+    return in;
+}
+
 size_t MyString::get_length() const
 {
     return std::strlen(str);

@@ -2,9 +2,16 @@
 #define _MYSTRING_HPP_
 
 #include <cstring>
+#include <ostream>
+#include <istream>
 
 class MyString
 {
+    // ***** OVERLOAD STREAM EXTRACTION AND INSERTION OPERATORS*****
+
+    friend std::ostream &operator<<(std::ostream &os, const MyString &rhs);
+    friend std::istream &operator>>(std::istream &os, MyString &rhs);
+    
     private:
 
     char *str; // C-style string
