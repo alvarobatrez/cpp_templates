@@ -88,3 +88,4 @@ Modify args:
     3. Overload assignment operator (move).
     4. Overload operators as member functions.
     5. Overload operators as global functions.
+    6. Overload insertion and extraction operators.
