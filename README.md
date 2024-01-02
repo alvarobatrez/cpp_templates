@@ -91,3 +91,4 @@ Modify args:
     6. Overload insertion and extraction operators.
   + Inheritance.
     1. Basic inheritance.
+    2. Protected members.
