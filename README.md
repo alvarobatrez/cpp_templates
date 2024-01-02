@@ -89,3 +89,5 @@ Modify args:
     4. Overload operators as member functions.
     5. Overload operators as global functions.
     6. Overload insertion and extraction operators.
+  + Inheritance.
+    1. Basic inheritance.
