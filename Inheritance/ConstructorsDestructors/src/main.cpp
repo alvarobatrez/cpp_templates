@@ -1,19 +1,22 @@
 #include <iostream>
 
+// ***** THIS EXAMPLE SHOWS THE BEHAVIOR OF THE CONSCTRUCTORS *****
+// ***** FULL EXAMPLE NEXT PROGRAM *****
+
 class Base
 {
     private:
 
-    int base_int;
+    int value;
 
     public:
 
-    Base() : base_int {0}
+    Base() : value {0}
     {
         std::cout << "Base no arguments constructor" << std::endl;
     }
 
-    Base(int x) : base_int {x}
+    Base(int x) : value {x}
     {
         std::cout << "Base arguments constructor" << std::endl;
     }
@@ -30,16 +33,16 @@ class Derived : public Base
     
     private:
 
-    int derived_int;
+    int double_value;
 
     public:
 
-    Derived() : derived_int {10}
+    Derived() : double_value {10}
     {
         std::cout << "Derived no arguments constructor" << std::endl;
     }
 
-    Derived(int x) : derived_int {x*2}
+    Derived(int x) : double_value {x*2}
     {
         std::cout << "Derived arguments constructor" << std::endl;
     }

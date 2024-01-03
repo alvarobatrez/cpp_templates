@@ -93,3 +93,4 @@ Modify args:
     1. Basic inheritance.
     2. Protected members.
     3. Constructors and destructors.
+    4. Passing arguments to base/derived classes.
