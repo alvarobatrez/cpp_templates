@@ -1,7 +1,7 @@
 #include <iostream>
 
 // ***** THIS EXAMPLE SHOWS THE BEHAVIOR OF THE CONSCTRUCTORS *****
-// ***** FULL EXAMPLE NEXT PROGRAM *****
+// ***** FULL EXAMPLE IN PASSING ARGUMENTS EXAMPLE *****
 
 class Base
 {

@@ -32,7 +32,7 @@ class Derived : public Base
 
     public:
 
-    Derived() : double_value {0}
+    Derived() : Base {}, double_value {0} // Base {} not necessary, just for explaining purposes
     {
         std::cout << "Derived no arguments constructor\n";
     }

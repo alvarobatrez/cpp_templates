@@ -94,3 +94,4 @@ Modify args:
     2. Protected members.
     3. Constructors and destructors.
     4. Passing arguments to base/derived classes.
+    5. Copy and move construtors.
