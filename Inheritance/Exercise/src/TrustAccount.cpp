@@ -8,8 +8,9 @@ bool TrustAccount::deposit(double amount)
     if (amount >= bonus_threshold)
     {
         amount += bonus_amount;
-        return SavingsAccount::deposit(amount);
     }
+    
+    return SavingsAccount::deposit(amount);
 }
 
 bool TrustAccount::withdraw(double amount)
