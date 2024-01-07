@@ -95,3 +95,4 @@ Modify args:
     3. Constructors and destructors.
     4. Passing arguments to base/derived classes.
     5. Copy and move construtors.
+    6. Exercise.
