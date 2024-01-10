@@ -96,3 +96,5 @@ Modify args:
     4. Passing arguments to base/derived classes.
     5. Copy and move construtors.
     6. Exercise.
+  + Polymorphism.
+    1. Static binding.
