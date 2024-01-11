@@ -98,3 +98,5 @@ Modify args:
     6. Exercise.
   + Polymorphism.
     1. Static binding.
+    2. Virtual functions.
+    3. Override specifier.
