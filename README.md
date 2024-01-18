@@ -101,3 +101,4 @@ Modify args:
     2. Virtual functions.
     3. Override specifier.
     4. Base class reference.
+    5. Abstract classes.
