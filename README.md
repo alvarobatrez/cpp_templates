@@ -102,3 +102,4 @@ Modify args:
     3. Override specifier.
     4. Base class reference.
     5. Abstract classes.
+    6. Interfaces.
