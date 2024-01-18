@@ -22,6 +22,8 @@ class SavingsAccount : public Account
     SavingsAccount(std::string name = default_name, double balance = default_balance, double interest_rate = default_interest_rate);
 
     bool deposit(double amount);
+
+    ~SavingsAccount() {}
 };
 
 #endif

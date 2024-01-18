@@ -20,6 +20,8 @@ class CheckingAccount : public Account
     CheckingAccount(std::string name = default_name, double balance = default_balance);
 
     bool withdraw(double amount);
+
+    ~CheckingAccount() {}
 };
 
 #endif

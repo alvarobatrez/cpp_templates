@@ -25,6 +25,8 @@ class Account
     bool deposit(double amount);
     bool withdraw(double amount);
     double get_balance() const;
+
+    ~Account() {}
 };
 
 #endif

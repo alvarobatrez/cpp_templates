@@ -27,6 +27,8 @@ class TrustAccount : public SavingsAccount
 
     bool deposit(double amount);
     bool withdraw(double amount);
+
+    ~TrustAccount() {}
 };
 
 #endif
