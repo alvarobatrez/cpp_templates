@@ -25,7 +25,7 @@ bool Account::withdraw(double amount)
     else
     {
         balance -= amount;
-        return balance;
+        return true;
     }
 }
 
