@@ -3,11 +3,10 @@
 
 #include <iostream>
 #include <string>
+#include "InterfacePrint.hpp"
 
-class Account
+class Account : public InterfacePrint
 {
-    friend std::ostream &operator<<(std::ostream &os, const Account &account);
-
     private:
 
     static constexpr const char *default_name = "Unnamed Account";
@@ -22,11 +21,12 @@ class Account
 
     Account(std::string name = default_name, double balance = default_balance);
     
-    bool deposit(double amount);
-    bool withdraw(double amount);
-    double get_balance() const;
+    virtual bool deposit(double amount) = 0;
+    virtual bool withdraw(double amount) = 0;
 
-    ~Account() {}
+    virtual void print(std::ostream &os) const override;
+
+    virtual ~Account() {}
 };
 
 #endif

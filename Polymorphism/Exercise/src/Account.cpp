@@ -29,13 +29,7 @@ bool Account::withdraw(double amount)
     }
 }
 
-double Account::get_balance() const
+void Account::print(std::ostream &os) const
 {
-    return balance;
-}
-
-std::ostream &operator<<(std::ostream &os, const Account &account)
-{
-    os << "[Account: " << account.name << ": " << account.balance << "]";
-    return os;
+    os << "[Account: " << name << ": " << balance << "]";
 }

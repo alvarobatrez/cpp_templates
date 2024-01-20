@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include "Account.hpp"
+#include "SavingsAccount.hpp"
 #include "CheckingAccount.hpp"
 #include "TrustAccount.hpp"
 #include "AccountUtils.hpp"
@@ -12,44 +14,44 @@ int main()
     cout << fixed;
 
     // Accounts
-    vector <Account> accounts;
-    accounts.push_back(Account {});
-    accounts.push_back(Account {"Paul"});
-    accounts.push_back(Account {"George", 2000.0});
-    accounts.push_back(Account {"Ringo", 5000.0});
-
-    display(accounts);
-    deposit(accounts, 1000.0);
-    withdraw(accounts, 2000.0);
+    // Account account{"Alvaro", 1000.0}; // not possible
+    // Account *p = new Account(); // not possible
 
     // Savings Accounts
-    vector <SavingsAccount> savings_accounts;
-    savings_accounts.push_back(SavingsAccount {});
-    savings_accounts.push_back(SavingsAccount {"Marge"});
-    savings_accounts.push_back(SavingsAccount {"Lisa", 2000.0});
-    savings_accounts.push_back(SavingsAccount {"Maggie", 5000.0, 5.0});
+    Account *homero = new SavingsAccount();
+    Account *marge = new SavingsAccount("Marge");
+    Account *lisa = new SavingsAccount("Lisa", 2000.0);
+    Account *maggie = new SavingsAccount("Maggie", 5000.0);
+
+    vector <Account *> savings_accounts;
+    savings_accounts.push_back(homero);
+    savings_accounts.push_back(marge);
+    savings_accounts.push_back(lisa);
+    savings_accounts.push_back(maggie);
 
     display(savings_accounts);
     deposit(savings_accounts, 1000.0);
     withdraw(savings_accounts, 2000.0);
 
     // Checking Accounts
-    vector <CheckingAccount> checking_accounts;
-    checking_accounts.push_back(CheckingAccount {});
-    checking_accounts.push_back(CheckingAccount {"Yoda"});
-    checking_accounts.push_back(CheckingAccount {"Arturito", 2000.0});
-    checking_accounts.push_back(CheckingAccount {"Luke", 5000.0});
+    Account *anakin = new CheckingAccount();
+    Account *yoda = new CheckingAccount("Yoda");
+    Account *arturito = new CheckingAccount("Arturito", 2000.0);
+    Account *luke = new CheckingAccount("Luke", 5000.0);
+    
+    vector <Account *> checking_accounts {anakin, yoda, arturito, luke};
 
     display(checking_accounts);
     deposit(checking_accounts, 1000.0);
     withdraw(checking_accounts, 2000.0);
 
     // Trust Accounts
-    vector <TrustAccount> trust_accounts;
-    trust_accounts.push_back(TrustAccount {});
-    trust_accounts.push_back(TrustAccount {"Jose", 2000.0, 2.0});
-    trust_accounts.push_back(TrustAccount {"Juan", 5000.0, 5.0});
-    trust_accounts.push_back(TrustAccount {"Jaime", 30000, 10.0});
+    Account *j = new TrustAccount();
+    Account *jose = new TrustAccount("Jose", 2000.0, 2.0);
+    Account *juan = new TrustAccount("Juan", 5000.0, 5.0);
+    Account *jaime = new TrustAccount("Jaime", 30000.0, 10.0);
+
+    vector <Account *> trust_accounts {j, jose, juan, jaime};
 
     display(trust_accounts);
     deposit(trust_accounts, 1000.0);
@@ -58,6 +60,19 @@ int main()
     {
         withdraw(trust_accounts, 1000.0);
     }
+
+    delete homero;
+    delete marge;
+    delete lisa;
+    delete maggie;
+    delete anakin;
+    delete yoda;
+    delete arturito;
+    delete luke;
+    delete j;
+    delete jose;
+    delete juan;
+    delete jaime;
     
     return 0;
 }
