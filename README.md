@@ -2,7 +2,7 @@
 
 ## Installation
 
-Enter to winlibs.com and download the last realease under UCRT runtime.
+Enter to winlibs.com and download the last realease below UCRT runtime.
 
 Unzip the file in the root folder C:\
 
@@ -104,3 +104,5 @@ Modify args:
     5. Abstract classes.
     6. Interfaces.
     7. Exercise.
+  + Smart Pointers.
+    1. Unique pointers.
