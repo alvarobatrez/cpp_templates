@@ -43,14 +43,16 @@ int main()
     std::unique_ptr<Class> p2 = std::make_unique<Class>(2);
 
     std::unique_ptr<Class> p3;
-    p3 = std::move(p1); // p3 = p1;
+    p3 = std::move(p1); // p3 = p1; copy is not allowed
 
+    // make_unique
     std::unique_ptr<Account> a = std::make_unique<CheckingAccount>("Alvaro", 500.0);
 
     std::cout << *a << std::endl;
     a->deposit(50);
     std::cout << *a << std::endl;
 
+    // using vectors
     std::vector <std::unique_ptr<Account>> accounts;
     accounts.push_back(std::make_unique<CheckingAccount>("Alvaro", 500.0));
     accounts.push_back(std::make_unique<SavingsAccount>("Berenice", 200.0, 1.0));

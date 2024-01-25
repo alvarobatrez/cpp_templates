@@ -106,3 +106,5 @@ Modify args:
     7. Exercise.
   + Smart Pointers.
     1. Unique pointers.
+    2. Shared pointers.
+    3. Weak pointers.
