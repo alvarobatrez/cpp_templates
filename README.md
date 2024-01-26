@@ -108,3 +108,4 @@ Modify args:
     1. Unique pointers.
     2. Shared pointers.
     3. Weak pointers.
+    4. Custom deleters.

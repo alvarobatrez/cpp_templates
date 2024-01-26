@@ -20,6 +20,8 @@ class B
 {
     private:
 
+    // ***** WEAK POINTER *****
+    
     std::weak_ptr<A> a_ptr;
 
     public:
