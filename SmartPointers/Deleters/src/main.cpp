@@ -24,7 +24,7 @@ int main()
 {
     // ***** CUSTOM FUNCTION DELETER *****
 
-    std::shared_ptr<MyClass> p1 {new MyClass(100), deleter};
+    { std::shared_ptr<MyClass> p1 {new MyClass(100), deleter}; }
 
     // ***** CUSTOM LAMBDA EXPRESSION DELETER *****
 
