@@ -109,3 +109,7 @@ Modify args:
     2. Shared pointers.
     3. Weak pointers.
     4. Custom deleters.
+  + Exception Handling.
+    1. Exception handling.
+    2. Multiple exceptions.
+    3. Stack unwinding;
