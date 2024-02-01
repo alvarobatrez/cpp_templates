@@ -114,3 +114,5 @@ Modify args:
     2. Multiple exceptions.
     3. Stack unwinding;
     4. User defined exceptions.
+    5. Class level exceptions.
+    6. Std exception.
