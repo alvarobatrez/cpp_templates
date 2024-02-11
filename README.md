@@ -46,6 +46,7 @@ Modify args:
     1. Basic math.
     2. F to C.
   + Input/Output Basics.
+  + Stream Manipulators.
   + Arrays and Vectors.
     1. Arrays.
     2. Vectors.
@@ -116,5 +117,3 @@ Modify args:
     4. User defined exceptions.
     5. Class level exceptions.
     6. Std exception.
-  + Input/Output and Streams.
-    1. 
