@@ -1,0 +1,4 @@
+Alvaro 1988 1.73
+Berenice 1995 1.65
+Carlos 2000 1.76
+Daniela 1990 1.7

@@ -46,7 +46,9 @@ Modify args:
     1. Basic math.
     2. F to C.
   + Input/Output Basics.
-  + Stream Manipulators.
+  + Streams.
+    1. Manipulators.
+    2. Read files.
   + Arrays and Vectors.
     1. Arrays.
     2. Vectors.
