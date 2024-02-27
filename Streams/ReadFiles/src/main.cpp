@@ -4,80 +4,80 @@
 
 int main()
 {
-    std::ifstream in_file;
+    std::ifstream file;
     std::string name;
     int year;
     double height;
 
     // ***** READ FILE - FORMATTED INPUT *****
 
-    in_file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\text.txt");
+    file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\text.txt");
 
-    if (!in_file)
+    if (!file)
     {
         std::cerr << "File not found";
         std::exit(0);
     }
 
-    in_file >> name >> year >> height;
+    file >> name >> year >> height;
 
     std::cout << "Name: " << name << "\t";
     std::cout << "Year: " << year << "\t";
     std::cout << "Height: " << height << std::endl;
 
-    in_file.close();
+    file.close();
 
     std::cout << std::endl;
 
     // ***** READ LINES - FORMATTED INPUT *****
 
-    in_file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\text.txt");
+    file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\text.txt");
 
-    if (!in_file)
+    if (!file)
     {
         std::cerr << "File not found";
         std::exit(0);
     }
 
-    while (!in_file.eof())
+    while (!file.eof())
     {
-        in_file >> name >> year >> height;
+        file >> name >> year >> height;
 
         std::cout << "Name: " << name << "\t";
         std::cout << "Year: " << year << "\t";
         std::cout << "Height: " << height << std::endl;
     }
 
-    in_file.close();
+    file.close();
 
     std::cout << std::endl;
 
     // ***** READ FILE - UNFORMATTED INPUT *****
 
-    in_file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\poem.txt");
+    file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\poem.txt");
 
-    if (!in_file)
+    if (!file)
     {
         std::cerr << "File not found";
         std::exit(0);
     }
 
     char c;
-    while (in_file.get(c))
+    while (file.get(c))
     {
         std::cout << c;
     }
     std::cout << std::endl;
 
-    in_file.close();
+    file.close();
 
     std::cout << std::endl;
 
     // ***** READ LINES - UNFORMATTED INPUT *****
 
-    in_file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\poem.txt");
+    file.open("C:\\Users\\alvar\\Documents\\cpp_templates\\Streams\\ReadFiles\\src\\poem.txt");
 
-    if (!in_file)
+    if (!file)
     {
         std::cerr << "File not found";
         std::exit(0);
@@ -85,12 +85,12 @@ int main()
 
     std::string line;
 
-    while (std::getline(in_file, line))
+    while (std::getline(file, line))
     {
         std::cout << line << std::endl;
     }
 
-    in_file.close();
+    file.close();
     
     return 0;
 }

@@ -46,9 +46,6 @@ Modify args:
     1. Basic math.
     2. F to C.
   + Input/Output Basics.
-  + Streams.
-    1. Manipulators.
-    2. Read files.
   + Arrays and Vectors.
     1. Arrays.
     2. Vectors.
@@ -64,6 +61,10 @@ Modify args:
     1. C style strings.
     2. C++ style strings.
     3. Exercise.
+  + Streams.
+    1. Manipulators.
+    2. Read files.
+    3. Write files.
   + Functions.
     1. Functions.
     2. Scopes.
