@@ -65,6 +65,7 @@ Modify args:
     1. Manipulators.
     2. Read files.
     3. Write files.
+    4. String streams.
   + Functions.
     1. Functions.
     2. Scopes.
