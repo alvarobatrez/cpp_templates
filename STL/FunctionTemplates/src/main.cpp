@@ -1,6 +1,6 @@
 #include <iostream>
 
-// ***** TEMPLATES *****
+// ***** FUNCTION TEMPLATES *****
 
 template <typename T>
 T min(T x, T y)
