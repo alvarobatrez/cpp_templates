@@ -125,3 +125,4 @@ Modify args:
     1. Macros.
     2. Functions templates.
     3. Class templates.
+    4. Class template array.
