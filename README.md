@@ -121,3 +121,6 @@ Modify args:
     4. User defined exceptions.
     5. Class level exceptions.
     6. Std exception.
+  + STL.
+    1. Macros.
+    2. Functions templates.
