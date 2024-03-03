@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Item.hpp"
 
 using namespace std;
@@ -20,7 +21,15 @@ int main()
 
     // ***** USING CLASS TEMPLATES - VECTORS *****
 
-
+    vector <Item<string, int>> vec {};
+    vec.push_back(Item<string, int>("Jhon", 1940));
+    vec.push_back(Item<string, int>("Paul", 1942));
+    vec.push_back(Item<string, int>("George", 1943));
+    vec.push_back(Item<string, int>("Ringo", 1940));
+    for (const auto &item: vec)
+    {
+        cout << "Name: " << item.get_var1() << " \tYear: " << item.get_var2() << endl;
+    }
     
     return 0;
 }

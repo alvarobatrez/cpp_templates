@@ -124,3 +124,4 @@ Modify args:
   + STL.
     1. Macros.
     2. Functions templates.
+    3. Class templates.
