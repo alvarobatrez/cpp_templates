@@ -121,8 +121,9 @@ Modify args:
     4. User defined exceptions.
     5. Class level exceptions.
     6. Std exception.
-  + STL.
+  + Sandard Template Library.
     1. Macros.
     2. Functions templates.
     3. Class templates.
     4. Class template array.
+    5. Iterators.
