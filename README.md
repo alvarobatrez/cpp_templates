@@ -18,17 +18,17 @@ Save and accept all.
 
 Select: View >> Command Palette >> C/C++: Edit Configurations >> Compiler Path
 
-Choose C:/mingw64/bin/g++.exe from the list. Scroll down and select C Standard c++17
-
+Choose C:/mingw64/bin/g++.exe from the list. Scroll down and select C Standard c++20
+Open the file HelloWorld/src/main.cpp and run it.
 Select: Terminal >> Configure Default Build Task
 
-This will open the file .vscode/task.jason
+This will open the file .vscode/task.json
 
 Modify args:
 
 ```
 "args": [
-  "-std=c++17",
+  "-std=c++20",
 	"-fdiagnostics-color=always",
 	"-g",
 	"-Wall",
