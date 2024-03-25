@@ -129,3 +129,4 @@ Modify args:
     3. Class templates.
     4. Class template array.
     5. Iterators.
+    6. Algorithms.
