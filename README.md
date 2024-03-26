@@ -130,3 +130,4 @@ Modify args:
     4. Class template array.
     5. Iterators.
     6. Algorithms.
+    7. Arrays.
