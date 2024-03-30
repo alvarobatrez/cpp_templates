@@ -132,3 +132,4 @@ Modify args:
     6. Algorithms.
     7. Arrays.
     8. Vectors.
+    9. Deque.
