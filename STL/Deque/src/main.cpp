@@ -1,6 +1,6 @@
-#include<iostream>
-#include<deque>
-#include<vector>
+#include <iostream>
+#include <deque>
+#include <vector>
 
 // display any type of variable
 template <typename T>
