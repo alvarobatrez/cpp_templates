@@ -136,3 +136,6 @@ Modify args:
     10. List.
     11. Sets.
     12. Map.
+    13. Stack.
+    14. Queue.
+    15. Priority Queue.
