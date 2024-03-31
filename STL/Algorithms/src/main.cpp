@@ -25,6 +25,13 @@ class Player
     {
         return (this->name == rhs.name && this->age == rhs.age);
     }
+
+    bool operator<(const Player &rhs) const
+    {
+        return this->age < rhs.age;
+    }
+
+
 };
 
 int main()
