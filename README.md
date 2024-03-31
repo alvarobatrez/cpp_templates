@@ -134,3 +134,5 @@ Modify args:
     8. Vectors.
     9. Deque.
     10. List.
+    11. Sets.
+    12. Map.
