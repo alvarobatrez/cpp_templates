@@ -141,3 +141,4 @@ Modify args:
     15. Priority Queue.
   + Lambda Expressions.
     1. Function objects.
+    2. Stateless lambda.
