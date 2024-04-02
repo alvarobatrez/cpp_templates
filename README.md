@@ -139,3 +139,5 @@ Modify args:
     13. Stack.
     14. Queue.
     15. Priority Queue.
+  + Lambda Expressions.
+    1. Function objects.
