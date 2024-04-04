@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <functional>
+#include <algorithm>
 
 class Player
 {
@@ -127,7 +128,20 @@ int main()
 
     // ***** SORT - FOR_EACH *****
 
-    
+    std::vector<Player> players
+    {
+        {"Berenice", 26},
+        {"Alvaro", 31},
+        {"Carlos", 36}
+    };
+
+    std::sort(begin(players), end(players), [](const Player &p1, const Player &p2) { return p1.get_age() < p2.get_age(); });
+
+    std::for_each(begin(players), end(players), [](const Player &p) { std::cout << p << std::endl; });
+
+    std::sort(begin(players), end(players), [](const Player &p1, const Player &p2) { return p1.get_name() < p2.get_name(); });
+
+    std::for_each(begin(players), end(players), [](const Player &p) { std::cout << p << std::endl; });
 
     return 0;
 }
