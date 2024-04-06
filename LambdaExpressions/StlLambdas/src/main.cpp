@@ -28,6 +28,13 @@ class Player
     void set_age(int age) { this->age = age; }
 };
 
+bool in_between(const std::vector<int> &nums, int start, int end)
+    {
+        bool result {false};
+        result = std::all_of(nums.begin(), nums.end(), [start, end](int value) { return value >= start && value <= end; });
+        return result;
+    }
+
 int main()
 {
     // ***** FOR EACH *****
@@ -141,7 +148,22 @@ int main()
 
     // ***** IN BETWEEN *****
 
-    
+    std::cout << std::boolalpha;
+
+    std::vector<int> numbers(10);
+    std::iota(numbers.begin(), numbers.end(), 1);
+
+    for (int &n: numbers)
+    {
+        std::cout << n << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << in_between(numbers, 50, 60) << std::endl;
+    std::cout << in_between(numbers, 1, 10) << std::endl;
+    std::cout << in_between(numbers, 4, 7) << std::endl;
+
+    std::cout << std::endl;
 
     return 0;
 }
