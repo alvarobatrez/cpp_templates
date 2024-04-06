@@ -35,6 +35,50 @@ bool in_between(const std::vector<int> &nums, int start, int end)
         return result;
     }
 
+class PasswordValidator1
+{
+    private:
+
+    char restricted_symbol {'$'};
+
+    public:
+
+    bool is_valid(std::string password)
+    {
+        return std::all_of(password.begin(), password.end(), [this](char character) { return character != restricted_symbol; });
+    }
+};
+
+class PasswordValidator2
+{
+    private:
+
+    std::vector<char> restricted_symbols {'$','!','+'};
+
+    public:
+
+    bool is_valid(std::string password)
+    {
+        return std::all_of
+        (
+            password.begin(),
+            password.end(),
+            [this](char character)
+            {
+                return std::none_of
+                (
+                    restricted_symbols.begin(),
+                    restricted_symbols.end(),
+                    [character](char symbol)
+                    {
+                        return character == symbol;
+                    }
+                );
+            }
+        );
+    }
+};
+
 int main()
 {
     // ***** FOR EACH *****
@@ -164,6 +208,71 @@ int main()
     std::cout << in_between(numbers, 4, 7) << std::endl;
 
     std::cout << std::endl;
+
+    // ***** ALL OF *****
+
+    std::string password {"P4s$w0rd"};
+    PasswordValidator1 pv1;
+    PasswordValidator2 pv2;
+
+    if (pv1.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
+
+    password = "P4assw0rd";
+    if (pv1.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
+
+    password = "P4as$w0rd";
+    if (pv2.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
+
+    password = "C++!";
+    if (pv2.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
+
+    password = "C++";
+    if (pv2.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
+
+    password = "CPlusPlus";
+    if (pv2.is_valid(password))
+    {
+        std::cout << "The password " << password << " is valid\n";
+    }
+    else
+    {
+        std::cout << "The password " << password << " is not valid\n";
+    }
 
     return 0;
 }
