@@ -87,6 +87,52 @@ void display_grocery_list(const std::vector<GroceryItem> &groceryList)
     std::cout << "Total items: " << validItemCount + invalidItemCount<< std::endl;
 }
 
+enum State {EngineFailure, InclemetWeather, Nominal, Unknown};
+enum Sequence {Abort, Hold, Launch};
+
+std::istream &operator>>(std::istream &is, State &state)
+{
+    std::underlying_type_t<State> userInput;
+    is >> userInput;
+
+    switch (userInput)
+    {
+        case EngineFailure:
+        case InclemetWeather:
+        case Nominal:
+        case Unknown:
+            state = State(userInput);
+            break;
+        default:
+            std::cout << "User input is not a valid launch state\n";
+            state = Unknown;
+    }
+
+    return is;
+}
+
+std::ostream &operator<<(std::ostream &os, const Sequence &sequence)
+{
+    switch (sequence)
+    {
+        case Abort:
+            os << "Abort";
+            break;
+        case Hold:
+            os << "Hold";
+            break;
+        case Launch:
+            os << "Launch";
+            break;
+    }
+    return os;
+}
+
+void initiate(Sequence sequence)
+{
+    std::cout << "Initiate " << sequence << " sequence\n";
+}
+
 int main()
 {
     // ***** ENUMERATION *****
@@ -128,6 +174,28 @@ int main()
     shoppingList.push_back(GroceryItem(Beer));
 
     display_grocery_list(shoppingList);
+
+    std::cout << std::endl;
+
+    // ***** USING OVERLOADING OPERATOR>> *****
+
+    State state;
+    std::cout << "Launch state: ";
+    std::cin >> state;
+
+    switch (state)
+    {
+        case EngineFailure:
+        case Unknown:
+            initiate(Abort);
+            break;
+        case InclemetWeather:
+            initiate(Hold);
+            break;
+        case Nominal:
+            initiate(Launch);
+            break;
+    }
     
     return 0;
 }
