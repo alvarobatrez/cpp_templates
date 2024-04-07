@@ -143,3 +143,6 @@ Modify args:
     1. Function objects.
     2. Stateless lambda.
     3. Stateful lambda.
+  + Enumerations.
+    1. Unscoped.
+    2. Scoped.
