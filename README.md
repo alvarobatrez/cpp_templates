@@ -142,3 +142,4 @@ Modify args:
   + Lambda Expressions.
     1. Function objects.
     2. Stateless lambda.
+    3. Stateful lambda.
