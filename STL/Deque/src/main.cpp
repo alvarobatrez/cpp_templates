@@ -46,9 +46,9 @@ int main()
     d2.push_front(200);
     display(d2);
 
-    std::cout << "Front: " << d.front() << std::endl;
-    std::cout << "Back: " << d.back() << std::endl;
-    std::cout << "Size: " << d.size() << std::endl;
+    std::cout << "Front: " << d2.front() << std::endl;
+    std::cout << "Back: " << d2.back() << std::endl;
+    std::cout << "Size: " << d2.size() << std::endl;
 
     std::vector<int> vec {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     std::deque<int> d3 {};
