@@ -146,3 +146,7 @@ Modify args:
   + Enumerations.
     1. Unscoped.
     2. Scoped.
+  + Design Patterns
+    + Creational Patterns
+      1. Factory Method.
+      2. Abstract Factory.
