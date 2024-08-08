@@ -1,6 +1,18 @@
 #include <iostream>
 #include <memory>
 
+/* El patrón de diseño Abstract Factory es un patrón creacional que proporciona una interfaz para
+crear familias de objetos relacionados o dependientes sin especificar sus clases concretas. Este
+patrón es útil cuando un sistema debe ser independiente de cómo se crean, componen y representan
+sus productos, y cuando el sistema debe configurarse con una de varias familias de productos.
+
+Principales Componentes del Patrón Abstract Factory:
+Abstract Factory: Declara una interfaz para operaciones que crean productos abstractos.
+Concrete Factory: Implementa las operaciones para crear productos concretos.
+Abstract Product: Declara una interfaz para un tipo de producto objeto.
+Concrete Product: Implementa la interfaz de un producto abstracto.
+Client: Usa interfaces declaradas por Abstract Factory y Abstract Product. */
+
 // Abstract product A
 class Chair
 {
